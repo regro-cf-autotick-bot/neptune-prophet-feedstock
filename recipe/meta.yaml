@@ -1,5 +1,5 @@
 {% set name = "neptune-prophet" %}
-{% set version = "0.1.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/neptune-ai/neptune-prophet/archive/{{ version }}.tar.gz
-  sha256: bb4457a47223220de327b97a7a8f694118cc3e27e1de0f52ebe63583c2200ecc
+  sha256: 20626b89b6c491933c787ad7108a2535a7b01c542b2b641705dbd01185d26f76
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
@@ -43,7 +43,7 @@ about:
   license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE
-  summary: 'Neptune Client integration with Prophet'
+  summary: Neptune Client integration with Prophet
   doc_url: https://docs.neptune.ai/integrations-and-supported-tools/
   dev_url: https://github.com/neptune-ai/neptune-prophet
 
