@@ -1,5 +1,5 @@
 {% set name = "neptune-prophet" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/neptune-ai/neptune-prophet/archive/{{ version }}.tar.gz
-  sha256: 20626b89b6c491933c787ad7108a2535a7b01c542b2b641705dbd01185d26f76
+  sha256: de2f5f4441c48e02e98d1a0853adf6540e281d787972276b1a8a349a3fb4ceb3
 
 build:
   number: 0
