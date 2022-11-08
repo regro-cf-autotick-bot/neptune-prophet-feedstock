@@ -1,5 +1,5 @@
 {% set name = "neptune-prophet" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/neptune-ai/neptune-prophet/archive/{{ version }}.tar.gz
-  sha256: de2f5f4441c48e02e98d1a0853adf6540e281d787972276b1a8a349a3fb4ceb3
+  sha256: 3a17fc0fcc011aa11247499134a406d3cd0d115c84ae92b7c3a77f48135b2a6f
 
 build:
   number: 0
@@ -18,6 +18,8 @@ requirements:
   host:
     - python >=3.7
     - pip
+    - poetry-core >=1.0.0
+    - poetry-dynamic-versioning
   run:
     - python >=3.7
     - matplotlib-base <=3.4.3
@@ -55,3 +57,5 @@ extra:
     - shnela
     - Raalsky
     - twolodzko
+    - AleksanderWWW
+    - PatrykGala
