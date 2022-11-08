@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/neptune-ai/neptune-prophet/archive/{{ version }}.tar.gz
-  sha256: 8f39c57c8f3188c1eb19bd4b189a4beffa4a9075ba6032688be3bccac9a2744f
+  sha256: 3a17fc0fcc011aa11247499134a406d3cd0d115c84ae92b7c3a77f48135b2a6f
 
 build:
   number: 0
