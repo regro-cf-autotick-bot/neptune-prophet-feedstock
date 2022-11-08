@@ -18,6 +18,8 @@ requirements:
   host:
     - python >=3.7
     - pip
+    - poetry-core >=1.0.0
+    - poetry-dynamic-versioning
   run:
     - python >=3.7
     - matplotlib-base <=3.4.3
@@ -55,3 +57,5 @@ extra:
     - shnela
     - Raalsky
     - twolodzko
+    - AleksanderWWW
+    - PatrykGala
