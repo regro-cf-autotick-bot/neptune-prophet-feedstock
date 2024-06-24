@@ -1,6 +1,6 @@
 {% set name = "neptune-prophet" %}
 {% set package_name = "neptune_prophet" %}
-{% set version = "0.5.0" %}
+{% set version = "1.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ package_name }}-{{ version }}.tar.gz
-  sha256: 5d022c747ac81ea1aa2230ded5f5d7add2454aff12f9a1d0eb4a17d4859ff30f
+  sha256: c1b92319e8592e12c69a3d8115f49d0dc84a42bb0c1077a3aedf29751d2a722a
 
 build:
   number: 0
