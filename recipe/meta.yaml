@@ -11,18 +11,18 @@ source:
   sha256: 5d022c747ac81ea1aa2230ded5f5d7add2454aff12f9a1d0eb4a17d4859ff30f
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
     - poetry-core >=1.0.0
     - poetry-dynamic-versioning
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - matplotlib-base <=3.4.3
     - neptune-client >=0.15.0
     - numpy
@@ -38,6 +38,7 @@ test:
   requires:
     - pip
     - pytest
+    - python {{ python_min }}
   commands:
     - pip check
 
